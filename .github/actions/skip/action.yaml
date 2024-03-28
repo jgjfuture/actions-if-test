@@ -8,6 +8,6 @@ runs:
   using: "composite"
   steps:
     - name: skip
-      if: ${{ inputs.param == true }}
+      if: ${{ inputs.param == 'true' }}
       run: echo skip
       shell: bash
