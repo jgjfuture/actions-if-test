@@ -9,4 +9,4 @@ jobs:
               run: echo start
             - uses: "./.github/actions/skip"
               with:
-                param: ${{false}}
+                param: true
