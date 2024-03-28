@@ -1,0 +1,12 @@
+name: skip
+inputs:
+  param:
+    default: false
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: skip
+      if: ${{ inputs.param }}
+      run: echo skip

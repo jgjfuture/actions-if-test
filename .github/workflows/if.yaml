@@ -1,0 +1,12 @@
+name: IF
+on: push
+jobs:
+    if-test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: echo
+              run: echo start
+            - uses: "./.github/actions/skip"
+              with:
+                param: false
