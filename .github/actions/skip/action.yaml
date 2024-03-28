@@ -10,3 +10,4 @@ runs:
     - name: skip
       if: ${{ inputs.param }}
       run: echo skip
+      shell: bash
